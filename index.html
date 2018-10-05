@@ -1,0 +1,190 @@
+<html>
+<head>
+<link href="style2.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+td{
+margin-top:20%;
+
+}
+body{
+background-color:#C4F20D;
+background-attachment:fixed;
+background-position:cover;
+}
+table{
+ background-color:#0071B2;
+ }
+h2{
+text-align:center;
+background-image: linear-gradient(to right, rgba(224, 255, 255, 0.5) , rgba(0, 0, 235, 0));
+font-family:Comic Sans, Comic Sans MS, cursive;
+}
+select{
+margin-top:10px;
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #ffffff;
+	font-family:Comic Sans, Comic Sans MS, cursive;
+    padding: 14px 28px;
+    font-size: 26px;
+    cursor: pointer;
+    text-align: center;
+}
+.hidden{
+display:none;
+}
+</style>
+  
+  </head>
+<body>
+<h2>VOCABULARY</h2>
+<h2>Instruction</h2>
+<br>
+<br>
+<br>
+
+
+
+
+<div class="tab1">
+<div class="table-responsive"><p style="background-color:#fff; padding-top:30px;">
+<table class="table" style="margin-top:40px; background-color:#fff;  width:80%;height:40%;">
+	
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Tanseef. <span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;2.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Kumar.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;3.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Dinanath Chouhan.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;4.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Rastogi.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">	
+	
+</table>
+</p>
+</div>
+</div>
+
+<div class="tab4 hidden">
+<div class="table-responsive">
+<table class="table" style="margin-top:40px; background-color:#726DF2; width:800px;height:500px;">
+	<tr>
+	<td><img height="200px" src="items/doll.png"></td>
+	</tr>
+	
+	
+</table>
+</div>
+</div>
+
+<audio id="audio2" src="try-again.mp3"></audio>
+<audio id="audio1" src="well-done.mp3"></audio>
+</center>
+<script>
+function correct1() {
+ var a1 = document.getElementById("correct1");
+ var a2 = document.getElementById("wrong1");
+ var a3 = document.getElementById("wrong2");
+ a1.style.backgroundColor = "#00FF00"
+ a2.style.backgroundColor = "#ffffff"
+ a3.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio1");
+       audio.play();
+setInterval(function(){ $('.tab1').addClass('hidden')
+	   $('.tab2').removeClass('hidden')},2000);
+      
+	   
+}
+function wrong1() {
+ var a1 = document.getElementById("correct1");
+ var a2 = document.getElementById("wrong1");
+ var a3 = document.getElementById("wrong2");
+ a1.style.backgroundColor = "#ffFFff"
+ a2.style.backgroundColor = "#ff0000"
+ a3.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio2");
+       audio.play();
+}
+function wrong2() {
+ var a1 = document.getElementById("correct1");
+ var a2 = document.getElementById("wrong1");
+ var a3 = document.getElementById("wrong2");
+ a1.style.backgroundColor = "#ffFFff"
+ a3.style.backgroundColor = "#ff0000"
+ a2.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio2");
+       audio.play();
+}
+function correct2() {
+ var a1 = document.getElementById("correct2");
+ var a2 = document.getElementById("wrong3");
+ var a3 = document.getElementById("wrong4");
+ a1.style.backgroundColor = "#00FF00"
+ a2.style.backgroundColor = "#ffffff"
+ a3.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio1");
+       audio.play();
+setInterval(function(){ $('.extra').addClass('hidden')
+	   $('.tab3').removeClass('hidden')},2000);
+}
+function wrong3() {
+ var a1 = document.getElementById("correct2");
+ var a2 = document.getElementById("wrong3");
+ var a3 = document.getElementById("wrong4");
+ a1.style.backgroundColor = "#ffFFff"
+ a2.style.backgroundColor = "#ff0000"
+ a3.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio2");
+       audio.play();
+}
+function wrong4() {
+ var a1 = document.getElementById("correct2");
+ var a2 = document.getElementById("wrong3");
+ var a3 = document.getElementById("wrong4");
+ a1.style.backgroundColor = "#ffFFff"
+ a3.style.backgroundColor = "#ff0000"
+ a2.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio2");
+       audio.play();
+}
+
+function correct3() {
+ var a1 = document.getElementById("correct3");
+ var a2 = document.getElementById("wrong5");
+ var a3 = document.getElementById("wrong6");
+ a1.style.backgroundColor = "#00FF00"
+ a2.style.backgroundColor = "#ffffff"
+ a3.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio1");
+       audio.play();
+setInterval(function(){ $('.extra2').addClass('hidden')
+	   $('.tab4').removeClass('hidden')},2000);
+}
+function wrong5() {
+ var a1 = document.getElementById("correct3");
+ var a2 = document.getElementById("wrong5");
+ var a3 = document.getElementById("wrong6");
+ a1.style.backgroundColor = "#ffFFff"
+ a2.style.backgroundColor = "#ff0000"
+ a3.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio2");
+       audio.play();
+}
+function wrong6() {
+ var a1 = document.getElementById("correct3");
+ var a2 = document.getElementById("wrong5");
+ var a3 = document.getElementById("wrong6");
+ a1.style.backgroundColor = "#ffFFff"
+ a3.style.backgroundColor = "#ff0000"
+ a2.style.backgroundColor = "#ffffff"
+ var audio = document.getElementById("audio2");
+       audio.play();
+}
+
+
+</script>
+
+</body>
+</html>
