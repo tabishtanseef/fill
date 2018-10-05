@@ -40,42 +40,103 @@ margin-top:10px;
 .hidden{
 display:none;
 }
+.button {
+    position: relative;
+    background-color: #f4511e;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+
+}
 </style>
   
   </head>
 <body>
+
+<div class="tab1">
 <h2>VOCABULARY</h2>
 <h2>Instruction</h2>
 <br>
 <br>
 <br>
+<div class="container">
+	<div class="row" >
+	<div class="col-md-12">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1.&nbsp; &nbsp; Hi my name is <select id="first"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Tanseef. <span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	
+	</div>
+	</div>
+	<div class="row" id="dim" >
+	<div class="col-sm-12">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1.&nbsp; &nbsp; Hi my name is <select id="first"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Tanseef. <span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	
+	</div>
+	</div>
+	<div class="row" id="dim"  >
+	<div class="col-md-12">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1.&nbsp; &nbsp; Hi my name is <select id="first"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Tanseef. <span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	
+	</div>
+	</div>
+	<div class="row" id="dim"  >
+	<div class="col-md-12">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1.&nbsp; &nbsp; Hi my name is <select id="first"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Tanseef. <span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	
+	</div>
+	</div>
+</div>
 
 
 
-
-<div class="tab1">
 <div class="table-responsive"><p style="background-color:#fff; padding-top:30px;">
 <table class="table" style="margin-top:40px; background-color:#fff;  width:80%;height:40%;">
 	
-	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Tanseef. <span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
-	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;2.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Kumar.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
-	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;3.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Dinanath Chouhan.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
-    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;4.&nbsp; &nbsp; Hi my name is <select><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Rastogi.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">	
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;1.&nbsp; &nbsp; Hi my name is <select id="first"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Tanseef. <span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;2.&nbsp; &nbsp; Hi my name is <select id="firs"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Kumar.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+	&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;3.&nbsp; &nbsp; Hi my name is <select id="fir"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Dinanath Chouhan.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">
+    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;4.&nbsp; &nbsp; Hi my name is <select id="fi"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Rastogi.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">	
+    &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;4.&nbsp; &nbsp; Hi my name is <select id="f"><option selected disabled>     </option><option>Tabish</option><option>Rahul</option><option>Kriti</option></select> Rastogi.<span style="color:green; font-weight:bold;" class="hidden">&nbsp; &nbsp;  Tabish</span><hr class="dashed">	
 	
 </table>
 </p>
+<center>
+<td><button class="button"   onclick="ho()"><span>Reset </span></button></td>
+	<td><button class="button" onclick="go()" ><span>Submit </span></button></td>
+	<td><button class="button" onclick="show()"><span>Answer Key </span></button></td>
+</center>
 </div>
 </div>
 
 <div class="tab4 hidden">
-<div class="table-responsive">
-<table class="table" style="margin-top:40px; background-color:#726DF2; width:800px;height:500px;">
-	<tr>
-	<td><img height="200px" src="items/doll.png"></td>
-	</tr>
-	
-	
-</table>
+<p style="margin-top:20%; text-align:center; font-family:Comic Sans, Comic Sans MS, cursive; font-size:100px; color:blue;">Well Done !!</p>
 </div>
 </div>
 
@@ -83,105 +144,43 @@ display:none;
 <audio id="audio1" src="well-done.mp3"></audio>
 </center>
 <script>
-function correct1() {
- var a1 = document.getElementById("correct1");
- var a2 = document.getElementById("wrong1");
- var a3 = document.getElementById("wrong2");
- a1.style.backgroundColor = "#00FF00"
- a2.style.backgroundColor = "#ffffff"
- a3.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio1");
-       audio.play();
-setInterval(function(){ $('.tab1').addClass('hidden')
-	   $('.tab2').removeClass('hidden')},2000);
-      
+function ho() {
+ 
+window.location="index.html"
+}
+function show() {
+ 
+	   $('span').removeClass('hidden')
 	   
+
 }
-function wrong1() {
- var a1 = document.getElementById("correct1");
- var a2 = document.getElementById("wrong1");
- var a3 = document.getElementById("wrong2");
- a1.style.backgroundColor = "#ffFFff"
- a2.style.backgroundColor = "#ff0000"
- a3.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio2");
+function go() {
+ var a1 = document.getElementById("first");
+ var a2 = document.getElementById("firs");
+ var a3 = document.getElementById("fir");
+ var a4 = document.getElementById("fi");
+ var a5 = document.getElementById("f");
+
+var ans1 = a1.options[a1.selectedIndex].text;
+var ans2 = a2.options[a2.selectedIndex].text;
+var ans3= a3.options[a3.selectedIndex].text;
+var ans4= a4.options[a4.selectedIndex].text;
+var ans5= a5.options[a5.selectedIndex].text;
+
+if(ans1=="Cake" && ans2=="King" && ans3=="Vase" && ans4=="Sandwich" && ans5=="Doll" && ans6=="Basket"){
+
+var audio = document.getElementById("audio1");
+       audio.play();
+	   $('.tab1').addClass('hidden')
+	   $('.tab4').removeClass('hidden')
+}
+else{
+
+var audio = document.getElementById("audio2");
        audio.play();
 }
-function wrong2() {
- var a1 = document.getElementById("correct1");
- var a2 = document.getElementById("wrong1");
- var a3 = document.getElementById("wrong2");
- a1.style.backgroundColor = "#ffFFff"
- a3.style.backgroundColor = "#ff0000"
- a2.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio2");
-       audio.play();
-}
-function correct2() {
- var a1 = document.getElementById("correct2");
- var a2 = document.getElementById("wrong3");
- var a3 = document.getElementById("wrong4");
- a1.style.backgroundColor = "#00FF00"
- a2.style.backgroundColor = "#ffffff"
- a3.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio1");
-       audio.play();
-setInterval(function(){ $('.extra').addClass('hidden')
-	   $('.tab3').removeClass('hidden')},2000);
-}
-function wrong3() {
- var a1 = document.getElementById("correct2");
- var a2 = document.getElementById("wrong3");
- var a3 = document.getElementById("wrong4");
- a1.style.backgroundColor = "#ffFFff"
- a2.style.backgroundColor = "#ff0000"
- a3.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio2");
-       audio.play();
-}
-function wrong4() {
- var a1 = document.getElementById("correct2");
- var a2 = document.getElementById("wrong3");
- var a3 = document.getElementById("wrong4");
- a1.style.backgroundColor = "#ffFFff"
- a3.style.backgroundColor = "#ff0000"
- a2.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio2");
-       audio.play();
 }
 
-function correct3() {
- var a1 = document.getElementById("correct3");
- var a2 = document.getElementById("wrong5");
- var a3 = document.getElementById("wrong6");
- a1.style.backgroundColor = "#00FF00"
- a2.style.backgroundColor = "#ffffff"
- a3.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio1");
-       audio.play();
-setInterval(function(){ $('.extra2').addClass('hidden')
-	   $('.tab4').removeClass('hidden')},2000);
-}
-function wrong5() {
- var a1 = document.getElementById("correct3");
- var a2 = document.getElementById("wrong5");
- var a3 = document.getElementById("wrong6");
- a1.style.backgroundColor = "#ffFFff"
- a2.style.backgroundColor = "#ff0000"
- a3.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio2");
-       audio.play();
-}
-function wrong6() {
- var a1 = document.getElementById("correct3");
- var a2 = document.getElementById("wrong5");
- var a3 = document.getElementById("wrong6");
- a1.style.backgroundColor = "#ffFFff"
- a3.style.backgroundColor = "#ff0000"
- a2.style.backgroundColor = "#ffffff"
- var audio = document.getElementById("audio2");
-       audio.play();
-}
 
 
 </script>
